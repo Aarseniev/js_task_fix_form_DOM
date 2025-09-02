@@ -11,9 +11,7 @@ function getName(inputName) {
 
 inputElements.forEach((input) => {
   input.setAttribute('placeholder', getName(input.name));
-});
 
-inputElements.forEach((input) => {
   const label = document.createElement('label');
 
   if (!input.id) {
@@ -25,5 +23,5 @@ inputElements.forEach((input) => {
 
   label.className = 'field-label';
 
-  input.parentNode.insertBefore(label, input);
+  input.parentNode.appendChild(label)
 });
