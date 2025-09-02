@@ -1,0 +1,2 @@
+"use strict";var inputElements=document.querySelectorAll("form input");function getName(e){var t=e.split(/(?=[A-Z])/).join(" ");return t[0].toUpperCase()+t.slice(1)}inputElements.forEach(function(e){e.setAttribute("placeholder",getName(e.name));var t=document.createElement("label");e.id||(e.id=e.name),t.textContent=getName(e.name),t.htmlFor=e.id,t.className="field-label",e.parentNode.appendChild(t)});
+//# sourceMappingURL=js_task_fix_form_DOM.bdc6c3fe.js.map
